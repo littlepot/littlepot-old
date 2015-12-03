@@ -9,12 +9,33 @@
     <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
+    <style type="text/css">
+      html,body{height:100%;}
+      .carousel,.item,.active{height:100%;}
+      .carousel-inner{height:100%;}
+      .fill{width:100%;height:100%;background-position:center;background-size:cover;}
+      
+      /* faster sliding speed */
+      .carousel-inner > .item {
+          -webkit-transition: 0.3s ease-in-out left;
+          -moz-transition: 0.3s ease-in-out left;
+          -o-transition: 0.3s ease-in-out left;
+          transition: 0.3s ease-in-out left;
+      }
+      
+      /* keep full widget on smaller screens */
+      @media (max-width: 767px) { 
+      	body {
+      		padding-left: 0;
+      		padding-right: 0;
+      	}
+      }
+    </style>
     
-    
-    <title>Puche portal</title>
+    <title>Puche Portal</title>
   </head>
   <body>
-    <div class="navbar navbar-inverse">
+<div class="navbar navbar-inverse" style="margin-bottom:0px">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -22,25 +43,105 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Puche Home</a>
+          <a class="navbar-brand" href="#">Puche Portal</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Apps <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Games</li>
+                <li><a href="http://games.claroy.com/cinco">Five in a row</a></li>
+                <li><a href="#" style="text-muted">Dominó</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">About me <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://twitter.com/pucherico">Twitter</a></li>
+                <li><a href="https://plus.google.com/+JoseAntonioPucheRico/posts">Google+</a></li>
+                <li><a href="http://flickr.com/pucherico">Flick</a></li>
+                <li><a href="http://500px.com/pucherico">500px</a></li>
+                <li><a href="https://runkeeper.com/user/pucherico">Runkeeper</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Blogs</li>
+                <li><a href="http://javanotepad.blogspot.com">Java notepad</a></li>
+                <li><a href="http://blog.claroy.com/" style="text-muted">Blog Claroy</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
-    
-    <div class="container">
-      
-      <div class="text-center">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+  </ol>
+  
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="fill" style="background-image:url('https://farm6.staticflickr.com/5639/20868974924_465a59a65e_z_d.jpg');">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Sunset at the breakwater</h1>
+            <p></p>
+            <p><a class="btn btn-lg btn-primary" href="http://flickr.com/pucherico">Browse my gallery</a>
+          </p>
+          </div>
+        </div>
       </div>
-      
-    </div><!-- /.container -->
-  </body>
+    </div>
+    <div class="item">
+      <div class="fill" style="background-image:url('https://farm6.staticflickr.com/5638/22447542381_7d6944b3d8_z_d.jpg');">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>The scent of fresh lemons</h1>
+            <p></p>
+            <p><a class="btn btn-large btn-primary" href="http://flickr.com/pucherico">Browse my gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="icon-next"></span>
+  </a>  
+</div>
+<!-- /.carousel -->
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="pull-right"><a href="#">Back to top</a></p>
+    <p>José Antonio Puche Rico</p>
+  </footer>
+
+</div><!-- /.container -->
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 5000
+    })
+  });
+</script>
+</body>
 </html>
