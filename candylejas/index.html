@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>  
+    <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+      html,body{height:100%; background-color:pink;}
+      .carousel,.item,.active{height:100%;}
+      .carousel-inner{height:100%;}
+      .fill{width:100%;height:100%;background-position:center;background-size:cover;}
+      
+      /* faster sliding speed */
+      .carousel-inner > .item {
+          -webkit-transition: 0.3s ease-in-out left;
+          -moz-transition: 0.3s ease-in-out left;
+          -o-transition: 0.3s ease-in-out left;
+          transition: 0.3s ease-in-out left;
+      }
+      
+      /* keep full widget on smaller screens */
+      @media (max-width: 767px) { 
+      	body {
+      		padding-left: 0;
+      		padding-right: 0;
+      	}
+      }
+    </style>
+    
+    <title>Candylejas</title>
+  </head>
+  <body>
+<div class="navbar navbar-inverse" style="margin-bottom:0px">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Candylejas</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servicios <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="disabled">(Próximamente disponible)</a></li></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Catálogo <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="disabled">Meriendas</a></li></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Cumpleaños</li>
+                <li><a href="http://games.claroy.com/cinco">Chuches y diversión</a></li>
+                <li><a href="#" style="text-muted" class="disabled">Tartas</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acerca de <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://plus.google.com/+JoseAntonioPucheRico/posts">Candylejas en Facebook</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#contact" class="disabled">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
+    <li data-target="#myCarousel" data-slide-to="6"></li>
+    <li data-target="#myCarousel" data-slide-to="7"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="fill" style="background-image:url('https://farm1.staticflickr.com/736/21040387723_8710da28e4_z_d.jpg');">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Piruletas</h1>
+            <p>Piruletas decoradas. Ideal para fiestas y cumpleaños... convertirá tu evento en una explosión de sabor y color.</p>
+            <p><a class="btn btn-lg btn-primary" href="https://www.flickr.com/gp/pucherico/r2S6j3">Ver galería</a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="fill" style="background-image:url('https://farm1.staticflickr.com/605/21776065181_23d2e09356_z_d.jpg');">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Nubes y esponjas</h1>
+            <p></p>
+            <p><a class="btn btn-lg btn-primary" href="https://www.flickr.com/gp/pucherico/r2S6j3">Ver galería</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="fill" style="background-image:url('https://farm1.staticflickr.com/755/21492871813_f0661ef895_z_d.jpg');">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Café con estilo</h1>
+            <p>Para esos momentos tan...</p>
+            <p><a class="btn btn-lg btn-primary" href="https://www.flickr.com/gp/pucherico/r2S6j3">Ver galería</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="fill" style="background-image:url('https://farm1.staticflickr.com/648/22272025758_d53c96c954_z_d.jpg');">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Pink snack</h1>
+            <p>Una merienda original.</p>
+            <p><a class="btn btn-lg btn-primary" href="https://www.flickr.com/gp/pucherico/r2S6j3">Ver galería</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="fill" style="background-image:url('https://farm6.staticflickr.com/5661/22283643098_0619bc5aa8_z_d.jpg');">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Un cumple diferente</h1>
+            <p></p>
+            <p><a class="btn btn-lg btn-primary" href="https://www.flickr.com/gp/pucherico/r2S6j3">Ver galería</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="fill" style="background-image:url('https://farm1.staticflickr.com/682/23503725265_f4c622e9cc_z_d.jpg');">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Happy hour</h1>
+            <p></p>
+            <p><a class="btn btn-lg btn-primary" href="https://www.flickr.com/gp/pucherico/r2S6j3">Ver galería</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="fill" style="background-image:url('https://farm1.staticflickr.com/682/23503725265_f4c622e9cc_z_d.jpg');">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Merienda con princesas</h1>
+            <p></p>
+            <p><a class="btn btn-lg btn-primary" href="https://www.flickr.com/gp/pucherico/r2S6j3">Ver galería</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="fill" style="background-image:url('https://farm1.staticflickr.com/664/21579811489_a5412ef80f_z_d.jpg');">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>;)</h1>
+            <p>Siempre listos para cualquier evento.</p>
+            <p><a class="btn btn-lg btn-primary" href="https://www.flickr.com/gp/pucherico/r2S6j3">Ver galería</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="icon-next"></span>
+  </a>  
+</div>
+<!-- /.carousel -->
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="pull-right"><a href="#">Ir arriba</a></p>
+    <p>Candylejas, 2015</p>
+  </footer>
+
+</div><!-- /.container -->
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 5000
+    })
+  });
+</script>
+</body>
+</html>
