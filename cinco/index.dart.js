@@ -4202,7 +4202,7 @@ z.Xf(!1)
 return z}},
 Ib:function(){var z,y,x
 z=new XMLHttpRequest()
-C.Dt.EP(z,"POST","/rs/cinco")
+C.Dt.EP(z,"POST","http://games.claroy.com/rs/cinco")
 z.setRequestHeader("Content-type","text/plain")
 y=H.VM(new W.RO(z,"loadend",!1),[null])
 x=y.gFV(y).ml(new M.yV(this,z))
@@ -4326,7 +4326,7 @@ return this.uP(0,a).ml(new M.vO())}else{z=H.VM(new P.vs(0,$.X3,null),[null])
 z.Xf(!1)
 return z}},
 uP:function(a,b){var z,y,x,w
-z="/rs/session/"+H.d(this.L3)+"/play/"+H.d(b.eH)+"/"+H.d(b.li)
+z="http://games.claroy.com/rs/session/"+H.d(this.L3)+"/play/"+H.d(b.eH)+"/"+H.d(b.li)
 y=new XMLHttpRequest()
 C.Dt.EP(y,"POST",z)
 x=H.VM(new W.RO(y,"loadend",!1),[null])
@@ -4351,7 +4351,7 @@ this.fv=y[3]
 this.Un=!0
 return!0}else return!1}},
 t3:function(){var z,y,x,w
-z="/rs/session/"+H.d(this.L3)
+z="http://games.claroy.com/rs/session/"+H.d(this.L3)
 y=new XMLHttpRequest()
 C.Dt.EP(y,"GET",z)
 x=H.VM(new W.RO(y,"loadend",!1),[null])
@@ -4384,7 +4384,7 @@ r=!0}else r=!1}else r=!1
 if("true"===x){this.Un=!0
 this.MW()}return r}},
 MW:function(){var z,y,x,w
-z="/rs/session/"+H.d(this.L3)+"/winner"
+z="http://games.claroy.com/rs/session/"+H.d(this.L3)+"/winner"
 y=new XMLHttpRequest()
 C.Dt.EP(y,"GET",z)
 x=H.VM(new W.RO(y,"loadend",!1),[null])
