@@ -3914,7 +3914,7 @@ aJ:{
 $1:function(a){return this.a.pc()}},
 h6:{
 "^":"Tp:9;b",
-$1:function(a){return this.b.qN.requestFullscreen()}},
+$1:function(a){return this.b.qN.webkitRequestFullscreen()}},
 bA:{
 "^":"Tp:9;c",
 $1:function(a){return this.c.VA(!0)}},
