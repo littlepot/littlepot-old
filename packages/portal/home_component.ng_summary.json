@@ -1,0 +1,68 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular2/router.dart",
+        "5": false
+      },
+      {
+        "1": "hero.dart",
+        "5": false
+      },
+      {
+        "1": "hero_service.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "HomeComponent"
+      }
+    ],
+    "6": "home_component.dart"
+  },
+  "type": {
+    "HomeComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "portal-home",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "HomeComponent",
+        "moduleUrl": "asset:portal/lib/home_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "<div id=\"myCarousel\" class=\"carousel slide\">\r\n  <!-- Indicators -->\r\n  <ol class=\"carousel-indicators\">\r\n    <li data-target=\"#myCarousel\" data-slide-to=\"0\" class=\"active\"></li>\r\n    <li data-target=\"#myCarousel\" data-slide-to=\"1\"></li>\r\n    <li data-target=\"#myCarousel\" data-slide-to=\"2\"></li>\r\n    <li data-target=\"#myCarousel\" data-slide-to=\"3\"></li>\r\n    <li data-target=\"#myCarousel\" data-slide-to=\"4\"></li>\r\n    <li data-target=\"#myCarousel\" data-slide-to=\"5\"></li>\r\n    <li data-target=\"#myCarousel\" data-slide-to=\"6\"></li>\r\n    <li data-target=\"#myCarousel\" data-slide-to=\"7\"></li>\r\n  </ol>\r\n  <div class=\"carousel-inner\">\r\n    <div class=\"item active\">\r\n      <div class=\"fill\" style=\"background-image:url('https://farm6.staticflickr.com/5639/20868974924_465a59a65e_z_d.jpg');\">\r\n        <div class=\"container\">\r\n          <div class=\"carousel-caption\">\r\n            <h1>Sunset at the breakwater</h1>\r\n            <p></p>\r\n            <p><a class=\"btn btn-lg btn-primary\" href=\"http://flickr.com/pucherico\">Browse my gallery</a>\r\n          </p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"item\">\r\n      <div class=\"fill\" style=\"background-image:url('https://farm6.staticflickr.com/5638/22447542381_7d6944b3d8_z_d.jpg');\">\r\n        <div class=\"container\">\r\n          <div class=\"carousel-caption\">\r\n            <h1>The scent of fresh lemons</h1>\r\n            <p></p>\r\n            <p><a class=\"btn btn-large btn-primary\" href=\"http://flickr.com/pucherico\">Browse my gallery</a></p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"item\">\r\n      <div class=\"fill\" style=\"background-image:url('https://farm6.staticflickr.com/5760/20870587803_3ce025b25a_z_d.jpg');\">\r\n        <div class=\"container\">\r\n          <div class=\"carousel-caption\">\r\n            <h1>Face to face</h1>\r\n            <p>The moon at moonset facing a rock that looks like an eagle. In fact they called it after that name: \"El pico del águila\".</p>\r\n            <p><a class=\"btn btn-large btn-primary\" href=\"http://flickr.com/pucherico\">Browse my gallery</a></p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"item\">\r\n      <div class=\"fill\" style=\"background-image:url('https://farm1.staticflickr.com/491/20249001851_d11844600f_z_d.jpg');\">\r\n        <div class=\"container\">\r\n          <div class=\"carousel-caption\">\r\n            <h1>Warmful bridge at sunset</h1>\r\n            <p>A warmful bridge at sunset in Puerto Mazarrón.</p>\r\n            <p><a class=\"btn btn-large btn-primary\" href=\"http://flickr.com/pucherico\">Browse my gallery</a></p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"item\">\r\n      <div class=\"fill\" style=\"background-image:url('https://farm6.staticflickr.com/5811/21416124338_623d3cf957_z_d.jpg');\">\r\n        <div class=\"container\">\r\n          <div class=\"carousel-caption\">\r\n            <h1>Beauty on a simple thorn wire</h1>\r\n            <p>Details of a thorn wire. It could have been shot anywhere, this one I take the shot in the cold fields of Edinburgh though.</p>\r\n            <p><a class=\"btn btn-large btn-primary\" href=\"http://flickr.com/pucherico\">Browse my gallery</a></p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"item\">\r\n      <div class=\"fill\" style=\"background-image:url('https://farm1.staticflickr.com/616/22882730965_131ab87a07_z_d.jpg');\">\r\n        <div class=\"container\">\r\n          <div class=\"carousel-caption\">\r\n            <h1>Grape and apples</h1>\r\n            <p></p>\r\n            <p><a class=\"btn btn-large btn-primary\" href=\"http://flickr.com/pucherico\">Browse my gallery</a></p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"item\">\r\n      <div class=\"fill\" style=\"background-image:url('https://farm1.staticflickr.com/637/21612667401_9a4d67a3b0_z_d.jpg');\">\r\n        <div class=\"container\">\r\n          <div class=\"carousel-caption\">\r\n            <h1>Rocks and water</h1>\r\n            <p></p>\r\n            <p><a class=\"btn btn-large btn-primary\" href=\"http://flickr.com/pucherico\">Browse my gallery</a></p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"item\">\r\n      <div class=\"fill\" style=\"background-image:url('https://farm6.staticflickr.com/5784/20762843151_587fd7fc5d_z_d.jpg');\">\r\n        <div class=\"container\">\r\n          <div class=\"carousel-caption\">\r\n            <h1>Enjoying nature</h1>\r\n            <p></p>\r\n            <p><a class=\"btn btn-large btn-primary\" href=\"http://flickr.com/pucherico\">Browse my gallery</a></p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <!-- Controls -->\r\n  <a class=\"left carousel-control\" href=\"#myCarousel\" data-slide=\"prev\">\r\n    <span class=\"icon-prev\"></span>\r\n  </a>\r\n  <a class=\"right carousel-control\" href=\"#myCarousel\" data-slide=\"next\">\r\n    <span class=\"icon-next\"></span>\r\n  </a>\r\n</div>\r\n\r\n<script type=\"text/javascript\">\r\n  $(document).ready(function() {\r\n    $('.carousel').carousel({\r\n      interval: 5000\r\n    })\r\n  });\r\n</script>\r\n",
+        "templateUrl": "asset:portal/lib/home_component.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:portal/lib/home_component.css"
+        ],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}

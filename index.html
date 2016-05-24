@@ -1,214 +1,35 @@
-<!DOCTYPE html>
-
-<html>
-  <head>
+<!DOCTYPE html><html><!-- #docregion head --><!-- #docregion base-href --><head>
+    <base href="/">   <!-- For testing using pub serve directly -->
+    <!-- base href="/dart/web/" --> <!-- For testing in WebStorm -->
+    <!-- #enddocregion base-href -->
+    <title>Puche Portal</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>  
-    <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- #enddocregion head -->
+    <!-- #docregion css -->
+    <!--<link rel="stylesheet" href="styles.css">-->
+    <!-- #enddocregion css -->
+    <!-- #docregion head -->
+    <script defer="" src="main.dart.js"></script>
+    
 
     <style type="text/css">
-      html,body{height:100%; background-color:black;}
-      .carousel,.item,.active{height:100%;}
-      .carousel-inner{height:100%;}
-      .fill{width:100%;height:100%;background-position:center;background-size:cover;}
-      
-      /* faster sliding speed */
-      .carousel-inner > .item {
-          -webkit-transition: 0.3s ease-in-out left;
-          -moz-transition: 0.3s ease-in-out left;
-          -o-transition: 0.3s ease-in-out left;
-          transition: 0.3s ease-in-out left;
-      }
-      
-      /* keep full widget on smaller screens */
-      @media (max-width: 767px) { 
-      	body {
-      		padding-left: 0;
-      		padding-right: 0;
-      	}
-      }
+      html,body{height:100%;}
     </style>
-    
-    <title>Puche Portal</title>
   </head>
+  <!-- #enddocregion head -->
   <body>
-<div class="navbar navbar-inverse" style="margin-bottom:0px">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Puche Portal</a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Apps <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#" class="disabled">Comming soon!</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Games</li>
-                <li><a href="http://games.claroy.com/cinco">Five in a row</a></li>
-                <li><a href="#" style="text-muted" class="disabled">Dominó</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">About me <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="https://plus.google.com/+JoseAntonioPucheRico/posts">Google+</a></li>
-                <li><a href="https://twitter.com/pucherico">Twitter</a></li>
-                <li><a href="http://flickr.com/pucherico">Flick</a></li>
-                <li><a href="http://500px.com/pucherico">500px</a></li>
-                <li><a href="https://runkeeper.com/user/pucherico">Runkeeper</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Blogs</li>
-                <li><a href="http://javanotepad.blogspot.com">Java notepad</a></li>
-                <li><a href="http://blog.claroy.com/" style="text-muted">Blog Claroy</a></li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#contact" class="disabled">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
+    <portal>Loading...</portal>
+  
 
-<!-- Carousel
-================================================== -->
-<div id="myCarousel" class="carousel slide">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-    <li data-target="#myCarousel" data-slide-to="4"></li>
-    <li data-target="#myCarousel" data-slide-to="5"></li>
-    <li data-target="#myCarousel" data-slide-to="6"></li>
-    <li data-target="#myCarousel" data-slide-to="7"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="item active">
-      <div class="fill" style="background-image:url('https://farm6.staticflickr.com/5639/20868974924_465a59a65e_z_d.jpg');">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Sunset at the breakwater</h1>
-            <p></p>
-            <p><a class="btn btn-lg btn-primary" href="http://flickr.com/pucherico">Browse my gallery</a>
-          </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="fill" style="background-image:url('https://farm6.staticflickr.com/5638/22447542381_7d6944b3d8_z_d.jpg');">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>The scent of fresh lemons</h1>
-            <p></p>
-            <p><a class="btn btn-large btn-primary" href="http://flickr.com/pucherico">Browse my gallery</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="fill" style="background-image:url('https://farm6.staticflickr.com/5760/20870587803_3ce025b25a_z_d.jpg');">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Face to face</h1>
-            <p>The moon at moonset facing a rock that looks like an eagle. In fact they called it after that name: "El pico del águila".</p>
-            <p><a class="btn btn-large btn-primary" href="http://flickr.com/pucherico">Browse my gallery</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="fill" style="background-image:url('https://farm1.staticflickr.com/491/20249001851_d11844600f_z_d.jpg');">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Warmful bridge at sunset</h1>
-            <p>A warmful bridge at sunset in Puerto Mazarrón.</p>
-            <p><a class="btn btn-large btn-primary" href="http://flickr.com/pucherico">Browse my gallery</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="fill" style="background-image:url('https://farm6.staticflickr.com/5811/21416124338_623d3cf957_z_d.jpg');">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Beauty on a simple thorn wire</h1>
-            <p>Details of a thorn wire. It could have been shot anywhere, this one I take the shot in the cold fields of Edinburgh though.</p>
-            <p><a class="btn btn-large btn-primary" href="http://flickr.com/pucherico">Browse my gallery</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="fill" style="background-image:url('https://farm1.staticflickr.com/616/22882730965_131ab87a07_z_d.jpg');">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Grape and apples</h1>
-            <p></p>
-            <p><a class="btn btn-large btn-primary" href="http://flickr.com/pucherico">Browse my gallery</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="fill" style="background-image:url('https://farm1.staticflickr.com/637/21612667401_9a4d67a3b0_z_d.jpg');">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Rocks and water</h1>
-            <p></p>
-            <p><a class="btn btn-large btn-primary" href="http://flickr.com/pucherico">Browse my gallery</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="fill" style="background-image:url('https://farm6.staticflickr.com/5784/20762843151_587fd7fc5d_z_d.jpg');">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Enjoying nature</h1>
-            <p></p>
-            <p><a class="btn btn-large btn-primary" href="http://flickr.com/pucherico">Browse my gallery</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="icon-prev"></span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="icon-next"></span>
-  </a>  
-</div>
-<!-- /.carousel -->
-
-
-  <!-- FOOTER -->
-  <footer>
-    <p class="pull-right"><a href="#">Back to top</a></p>
-    <p>José Antonio Puche Rico</p>
-  </footer>
-
-
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('.carousel').carousel({
-      interval: 5000
-    })
-  });
-</script>
-</body>
-</html>
+</body></html>

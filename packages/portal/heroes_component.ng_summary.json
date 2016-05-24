@@ -1,0 +1,141 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:async",
+        "5": false
+      },
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular2/router.dart",
+        "5": false
+      },
+      {
+        "1": "hero.dart",
+        "5": false
+      },
+      {
+        "1": "hero_detail_component.dart",
+        "5": false
+      },
+      {
+        "1": "hero_service.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "HeroesComponent",
+        "5": [
+          {
+            "1": "HeroService",
+            "4": "_heroService"
+          },
+          {
+            "1": "Router",
+            "4": "_router"
+          }
+        ],
+        "6": [
+          "OnInit"
+        ],
+        "7": [
+          {
+            "2": "HeroDetailComponent"
+          }
+        ]
+      }
+    ],
+    "6": "heroes_component.dart"
+  },
+  "type": {
+    "HeroesComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "my-heroes",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "HeroesComponent",
+        "moduleUrl": "asset:portal/lib/heroes_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "HeroService",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "query": null,
+            "viewQuery": null,
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "Router",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "query": null,
+            "viewQuery": null,
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        0
+      ],
+      "template": {
+        "encapsulation": 0,
+        "template": "<!-- #docplaster -->\r\n<!-- #docregion -->\r\n<h2>My Heroes</h2>\r\n<ul class=\"heroes\">\r\n  <li *ngFor=\"let hero of heroes\"\r\n    [class.selected]=\"hero === selectedHero\"\r\n    (click)=\"onSelect(hero)\">\r\n    <span class=\"badge\">{{hero.id}}</span> {{hero.name}}\r\n  </li>\r\n</ul>\r\n<!-- #docregion mini-detail -->\r\n<div *ngIf=\"selectedHero != null\">\r\n  <h2>\r\n    <!-- #docregion pipe -->\r\n    {{selectedHero.name | uppercase}} is my hero\r\n    <!-- #enddocregion pipe -->\r\n  </h2>\r\n  <button (click)=\"gotoDetail()\">View Details</button>\r\n</div>\r\n<!-- #enddocregion mini-detail -->\r\n<!-- #enddocregion -->\r\n",
+        "templateUrl": "asset:portal/lib/heroes_component.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:portal/lib/heroes_component.css"
+        ],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}

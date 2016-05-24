@@ -1,0 +1,150 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:html",
+        "5": false
+      },
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular2/router.dart",
+        "5": false
+      },
+      {
+        "1": "hero.dart",
+        "5": false
+      },
+      {
+        "1": "hero_service.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "HeroDetailComponent",
+        "5": [
+          {
+            "1": "HeroService",
+            "4": "_heroService"
+          },
+          {
+            "1": "RouteParams",
+            "4": "_routeParams"
+          }
+        ],
+        "6": [
+          "OnInit"
+        ]
+      }
+    ],
+    "6": "hero_detail_component.dart",
+    "7": [
+      {
+        "1": "package:angular2/core.ngfactory.dart",
+        "4": "i0"
+      },
+      {
+        "1": "package:angular2/router.ngfactory.dart",
+        "4": "i1"
+      },
+      {
+        "1": "hero.ngfactory.dart",
+        "4": "i2"
+      },
+      {
+        "1": "hero_service.ngfactory.dart",
+        "4": "i3"
+      }
+    ]
+  },
+  "type": {
+    "HeroDetailComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "my-hero-detail",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "HeroDetailComponent",
+        "moduleUrl": "asset:portal/lib/hero_detail_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "HeroService",
+                "moduleUrl": "asset:portal/lib/hero_service.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "query": null,
+            "viewQuery": null,
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "RouteParams",
+                "moduleUrl": "asset:angular2/lib/src/router/instruction.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "query": null,
+            "viewQuery": null,
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        0
+      ],
+      "template": {
+        "encapsulation": 0,
+        "template": "<!-- #docplaster -->\r\n<!-- #docregion -->\r\n<div *ngIf=\"hero != null\">\r\n  <h2>{{hero.name}} details!</h2>\r\n  <div>\r\n    <label>id: </label>{{hero.id}}</div>\r\n  <div>\r\n    <label>name: </label>\r\n    <input [(ngModel)]=\"hero.name\" placeholder=\"name\" />\r\n  </div>\r\n  <!-- #docregion back-button -->\r\n  <button (click)=\"goBack()\">Back</button>\r\n  <!-- #enddocregion back-button -->\r\n</div>",
+        "templateUrl": "asset:portal/lib/hero_detail_component.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:portal/lib/hero_detail_component.css"
+        ],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}
